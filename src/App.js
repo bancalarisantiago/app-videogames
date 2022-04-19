@@ -4,7 +4,7 @@ import React, { useEffect} from 'react'
 import { useDispatch } from 'react-redux'
 
 //Actions
-import {getAllVideogames, getGenres, getPlatforms} from '../src/redux/actions/index'
+import { getAllVideogames, getGenres, getPlatforms } from '../src/redux/actions/index'
 
 //Components 
 import Home from './components/Home'
