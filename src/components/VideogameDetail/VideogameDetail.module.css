@@ -1,0 +1,59 @@
+.container {
+  height: 110vh;
+  background-color: #111216;
+  overflow-y: hidden;
+}
+
+.container h1 {
+  margin: 15px auto;
+}
+.rating {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+.platforms {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.platforms span {
+  margin: 0 20px;
+  font-weight: 500;
+}
+.containerImgDes {
+  margin: auto;
+  max-width: 1000px;
+  max-height: 100vh;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+.containerImgDes p {
+  overflow-x: hidden;
+  padding: 0 10px;
+  max-height: 420px;
+  text-align: justify;
+}
+.genres span {
+  margin: 0 15px;
+  font-weight: 500;
+}
+.imgDetail {
+  max-width: 50%;
+  max-height: 420px;
+  border-radius: 10px;
+  margin: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+p,
+span,
+h1 {
+  color: white;
+}
+h1 {
+  font-size: 3rem;
+}

@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-family: "Chakra Petch";
+  font-weight: 500;
+}
+
+.btnFilter {
+  font-family: inherit;
+  justify-content: center;
+  align-self: center;
+  font-size: 14px;
+  background: royalblue;
+  margin: auto 0.8rem;
+  color: white;
+  padding: 0.3em 0.7em;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.btnClear {
+  margin-top: 3px;
+}
+
+.myGames {
+  background: rgb(37, 129, 83);
+}
+.btnFilter:hover {
+  background: #111216;
+  background-image: linear-gradient(to bottom, #3a769b, #2a4f66);
+  text-decoration: none;
+}
+
+.search {
+  border-radius: 12px;
+  padding: 0px 8px;
+  height: 25px;
+  font-size: 15px;
+  font-family: "Readex Pro";
+}
+
+.search::-webkit-input-placeholder {
+  padding: 5px;
+}
+
+.search::-moz-placeholder {
+  padding: 5px;
+}
+
+.search:-ms-input-placeholder {
+  margin: 0 50px;
+}
+
+.search::-ms-input-placeholder {
+  margin: 0 50px;
+}
+
+.search::placeholder {
+  margin: 0 50px;
+}
+.search:focus {
+  outline: none;
+}
+.btnSearch {
+  font-family: inherit;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.425);
+  margin-right: 1.5rem;
+  margin-left: -48px;
+  color: white;
+  padding: 0.1em 0.7em;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.btnSearch:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

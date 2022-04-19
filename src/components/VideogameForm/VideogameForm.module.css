@@ -1,0 +1,197 @@
+.container {
+  background-color: #111216;
+  height: 1000px;
+  font-family: "Chakra Petch";
+}
+
+.containerInputsImg {
+  width: 650px;
+  height: 350px;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: flex;
+
+  flex-direction: row;
+}
+.selects {
+  margin: 15px auto;
+  display: flex;
+}
+.selects select {
+  margin: 0 5px;
+  font-family: "Readex Pro";
+}
+.releaseRating {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  flex-direction: column;
+  align-content: space-evenly;
+  display: flex;
+  width: 350px;
+  height: 100px;
+}
+.inputs:focus {
+  border: 2px solid royalblue;
+}
+
+.inputs input {
+  margin: 6px;
+  width: 220px;
+  font-family: "Readex Pro";
+  border-radius: 5px;
+  outline: none;
+}
+.releaseRating input {
+  width: 110px;
+}
+.inputs label {
+  padding: -10px;
+}
+
+.inputs input[type="text"]:focus {
+  border: 2px solid royalblue;
+}
+.inputs input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-left: -10px;
+}
+
+.containerInputsImg img {
+  margin: 30px 30px 30px 20px;
+  max-width: 250px;
+  max-height: 180px;
+  border-radius: 10px;
+  position: relative;
+}
+
+form {
+  box-shadow: 0rem 0rem 0.5rem black;
+  width: auto;
+  max-height: 500px;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+form h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+textarea {
+  font-family: "Readex Pro";
+  margin-top: 7px;
+  width: 250px;
+  height: 50px;
+  resize: none;
+}
+.containerPlatGen {
+  margin: 10px 20px;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 270px;
+  max-height: 80px;
+  overflow-y: scroll;
+}
+.containerPlatGen li {
+  list-style-type: none;
+  display: flex;
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.containerPlatGen ul {
+  padding: 5px;
+  margin: 5px 5px;
+}
+.containerPlatGen button {
+  margin: 0 5px;
+  font-size: 0.3rem;
+  max-height: 15px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-weight: 900;
+  background-color: rgb(253, 32, 32);
+  border: none;
+  border-radius: 50px;
+}
+.containerPlatGen button:hover {
+  background-color: rgb(255, 47, 47);
+  transform: scale(1.15);
+}
+
+.btnForm {
+  font-family: inherit;
+  font-size: 15px;
+  background: royalblue;
+  color: white;
+  padding: 0.5em 0.8em;
+  padding-left: 0.7em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btnForm span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnForm svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnForm:hover .svgWrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btnForm:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btnForm:hover span {
+  transform: translateX(5em);
+}
+
+.btnForm:active {
+  transform: scale(0.95);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
