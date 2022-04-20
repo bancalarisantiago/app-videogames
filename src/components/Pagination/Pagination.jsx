@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 //Styles
-import style from "./Pagination.module.css";
+import styles from "./Pagination.module.css";
 
 const Pagination = ({ gamesPerPage, totalGames, paginate, current }) => {
   const pageNumbers = [];
@@ -20,14 +20,14 @@ const Pagination = ({ gamesPerPage, totalGames, paginate, current }) => {
   }, [current, page, totalGames]);
 
   return (
-    <div className={style.container}>
+    <div className={styles.container}>
       {pageNumbers.map((num) => {
         if (num === current) {
           return (
             <button
               value={current}
               id={`btn${current}`}
-              className={`${style.btn} ${style.active}`}
+              className={`${styles.btn} ${styles.active}`}
               onClick={(e) => handleOnClick(e, num)}
               key={current}
             >
@@ -39,7 +39,7 @@ const Pagination = ({ gamesPerPage, totalGames, paginate, current }) => {
             <button
               value={num}
               id={`btn${num}`}
-              className={`${style.btn}`}
+              className={`${styles.btn}`}
               onClick={(e) => handleOnClick(e, num)}
               key={num}
             >

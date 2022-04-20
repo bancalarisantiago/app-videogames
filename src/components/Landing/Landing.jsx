@@ -3,13 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //Styles
-import style from "./Landing.module.css";
+import styles from "./Landing.module.css";
 
 const Landing = () => {
   return (
-    <div className={style.container}>
-      <Link className={style.link} to="/home">
-        <span className={style.parpadea}>Insert coin's</span>
+    <div className={styles.container}>
+      <Link className={styles.link} to="/home">
+        <span className={styles.parpadea}>Insert coin's</span>
       </Link>
     </div>
   );

@@ -6,12 +6,18 @@
 }
 
 .checkboxContainer {
+  display: flex;
+  justify-content: center;
   margin: 10px auto;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
+.btnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btnsContainer button {
   margin: 0 10px;
@@ -58,7 +64,7 @@
 }
 
 .btn {
-  font-family: inherit;
+  font-family: "Readex Pro";
   font-size: 17px;
   background: #2d5ff5;
   color: white;

@@ -7,7 +7,7 @@ import Pagination from "../Pagination/Pagination";
 import Spinner from "../Spinner/Spinner";
 
 //Styles
-import { Wrapper, Container, Error } from "./Videogames.styles.js";
+import styles from "./Videogames.module.css";
 
 const Videogames = ({ games }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,23 +21,16 @@ const Videogames = ({ games }) => {
     setCurrentPage(page);
   };
 
-  useEffect(() => {
-    console.log(currentGames.length);
-    if (currentGames.length !== 15) {
-      setCurrentPage(1);
-    }
-  }, [currentGames]);
-
   return (
-    <Container>
+    <div className={styles.container}>
       {currentGames.length === 0 ? <Spinner></Spinner> : null}
       {currentGames[0] === "Not Found" ? (
-        <Error>
+        <div className={styles.error}>
           <h1>--404--</h1>
           <h1>NO GAMES FOUND</h1>
-        </Error>
+        </div>
       ) : (
-        <Wrapper>
+        <div className={styles.containerCards}>
           {currentGames?.map((vg) => (
             <VideogameCard
               name={vg.name}
@@ -49,18 +42,17 @@ const Videogames = ({ games }) => {
               genres={vg.genres}
             />
           ))}
-        </Wrapper>
+        </div>
       )}
-
-      <div>
+      <>
         <Pagination
           gamesPerPage={gamesPerPage}
           current={currentPage}
           totalGames={games.length}
           paginate={paginate}
         />
-      </div>
-    </Container>
+      </>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ import {
 } from "../../redux/actions/index.js";
 
 //Styles
-import style from "./FilterBar.module.css";
+import styles from "./FilterBar.module.css";
 
 //Images
 import img from "../../images/icons/sort-az.png";
@@ -72,30 +72,30 @@ const FilterBar = () => {
   }
 
   return (
-    <div className={style.container}>
-      <div className={style.btnsContainer}>
+    <div className={styles.container}>
+      <div className={styles.btnsContainer}>
         <button
-          className={style.btnIcon}
+          className={styles.btnIcon}
           value="nameAsc"
           onClick={handleOnClick}
         >
           <img value="nameAsc" src={img} alt="icon A-Z"></img>
         </button>
         <button
-          className={style.btnIcon}
+          className={styles.btnIcon}
           value="nameDesc"
           onClick={handleOnClick}
         >
           <img value="nameDesc" src={img2} alt="icon Z-A"></img>
         </button>
-        <button className={style.btn} value="ratAsd" onClick={handleOnClick}>
+        <button className={styles.btn} value="ratAsd" onClick={handleOnClick}>
           Rating 5 - 0
         </button>
-        <button className={style.btn} value="ratDesc" onClick={handleOnClick}>
+        <button className={styles.btn} value="ratDesc" onClick={handleOnClick}>
           Rating 0 - 5
         </button>
         <button
-          className={style.btn}
+          className={styles.btn}
           value="checklist"
           id="btn-filter"
           onClick={handelOnClickList}
@@ -103,13 +103,13 @@ const FilterBar = () => {
           Show Category Filter
         </button>
       </div>
-      <div className={style.checkboxContainer}>
+      <div className={styles.checkboxContainer}>
         {show ? (
-          <ul className={style.checkList} name="category">
+          <ul className={styles.checkList} name="category">
             {stateGenres?.map((opt, i) => (
-              <label className={style.labelCheck} key={i}>
+              <label className={styles.labelCheck} key={i}>
                 <input
-                  className={style.inputCheck}
+                  className={styles.inputCheck}
                   type="checkbox"
                   value={opt.name}
                   key={opt.id}
