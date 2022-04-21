@@ -5,8 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { createVideogame } from '../../redux/actions/index.js';
 
 //Components
-import Nav from '../Nav/Nav';
-import Header from '../Header/Header';
+import Nav from '../Nav';
+import Header from '../Header';
 
 //Images
 import imgForm from '../../images/imgForm.png';

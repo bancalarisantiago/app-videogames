@@ -1,10 +1,10 @@
 //Libraries, Hooks
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 //Components
-import VideogameCard from '../VideogameCard/VideogameCard';
-import Pagination from '../Pagination/Pagination';
-import Spinner from '../Spinner/Spinner';
+import VideogameCard from '../VideogameCard/index.';
+import Pagination from '../Pagination';
+import Spinner from '../Spinner';
 
 //Styles
 import styles from './Videogames.module.css';
@@ -12,7 +12,6 @@ import styles from './Videogames.module.css';
 const Videogames = ({ games }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [gamesPerPage] = useState(15);
-  //const [loading, setLoading] = useState(true)
   const indexOfLastGames = currentPage * gamesPerPage;
   const indexOfFirstGames = indexOfLastGames - gamesPerPage;
   const currentGames = games.slice(indexOfFirstGames, indexOfLastGames);
@@ -20,6 +19,10 @@ const Videogames = ({ games }) => {
   const paginate = (page) => {
     setCurrentPage(page);
   };
+
+  useState(() => {
+    console.log('games', currentGames);
+  }, [games, currentGames]);
 
   return (
     <div className={styles.container}>

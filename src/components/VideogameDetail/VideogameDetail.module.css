@@ -1,7 +1,7 @@
 .container {
-  height: 110vh;
+  height: 100%;
   background-color: #111216;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .container h1 {
