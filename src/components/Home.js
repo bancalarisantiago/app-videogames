@@ -1,6 +1,6 @@
 //Hooks
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 //Actions
 import {
@@ -8,17 +8,17 @@ import {
   getGenres,
   getPlatforms,
   getAllVideogames,
-} from "../redux/actions/index";
+} from '../redux/actions/index';
 
 //Components
-import Videogames from "./Videogames/Videogames.jsx";
-import Header from "./Header/Header.jsx";
-import SearchBar from "./SearchBar/SearchBar.jsx";
-import FilterBar from "./FilterBar/FilterBar.jsx";
-import Nav from "./Nav/Nav.jsx";
+import Videogames from './Videogames/Videogames.jsx';
+import Header from './Header/Header.jsx';
+import SearchBar from './SearchBar/SearchBar.jsx';
+import FilterBar from './FilterBar/FilterBar.jsx';
+import Nav from './Nav/Nav.jsx';
 
 //Styles
-import style from "./Home.module.css";
+import style from './Home.module.css';
 
 const Home = () => {
   const stateVideogames = useSelector((state) => state.videogamesCopy);

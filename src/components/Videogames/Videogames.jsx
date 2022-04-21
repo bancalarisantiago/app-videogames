@@ -1,13 +1,13 @@
 //Libraries, Hooks
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 //Components
-import VideogameCard from "../VideogameCard/VideogameCard";
-import Pagination from "../Pagination/Pagination";
-import Spinner from "../Spinner/Spinner";
+import VideogameCard from '../VideogameCard/VideogameCard';
+import Pagination from '../Pagination/Pagination';
+import Spinner from '../Spinner/Spinner';
 
 //Styles
-import styles from "./Videogames.module.css";
+import styles from './Videogames.module.css';
 
 const Videogames = ({ games }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,7 +24,7 @@ const Videogames = ({ games }) => {
   return (
     <div className={styles.container}>
       {currentGames.length === 0 ? <Spinner></Spinner> : null}
-      {currentGames[0] === "Not Found" ? (
+      {currentGames[0] === 'Not Found' ? (
         <div className={styles.error}>
           <h1>--404--</h1>
           <h1>NO GAMES FOUND</h1>

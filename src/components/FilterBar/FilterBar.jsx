@@ -1,20 +1,20 @@
 //Libraries, Hooks
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 //Actions
 import {
   genresFilter,
   sortBy,
   clearFilter,
-} from "../../redux/actions/index.js";
+} from '../../redux/actions/index.js';
 
 //Styles
-import styles from "./FilterBar.module.css";
+import styles from './FilterBar.module.css';
 
 //Images
-import img from "../../images/icons/sort-az.png";
-import img2 from "../../images/icons/sort-za.png";
+import img from '../../images/icons/sort-az.png';
+import img2 from '../../images/icons/sort-za.png';
 
 const FilterBar = () => {
   const dispatch = useDispatch();
@@ -37,14 +37,14 @@ const FilterBar = () => {
 
     if (!show) {
       //console.log(document.getElementById('btn-filter'))
-      let btn = document.getElementById("btn-filter");
-      btn.innerHTML = "Hide Category Filter";
+      let btn = document.getElementById('btn-filter');
+      btn.innerHTML = 'Hide Category Filter';
       dispatch(clearFilter());
       clearCheck();
       setShow(true);
     } else {
-      let btn = document.getElementById("btn-filter");
-      btn.innerHTML = "Show Category Filter";
+      let btn = document.getElementById('btn-filter');
+      btn.innerHTML = 'Show Category Filter';
       setShow(false);
     }
   }
@@ -62,7 +62,7 @@ const FilterBar = () => {
 
   function clearCheck() {
     if (stateGenresFilter.length < 1) {
-      var list = document.getElementsByClassName("check");
+      var list = document.getElementsByClassName('check');
       if (list.length > 0) {
         for (let input of list) {
           input.checked = false;
@@ -76,28 +76,28 @@ const FilterBar = () => {
       <div className={styles.btnsContainer}>
         <button
           className={styles.btnIcon}
-          value="nameAsc"
+          value='nameAsc'
           onClick={handleOnClick}
         >
-          <img value="nameAsc" src={img} alt="icon A-Z"></img>
+          <img value='nameAsc' src={img} alt='icon A-Z'></img>
         </button>
         <button
           className={styles.btnIcon}
-          value="nameDesc"
+          value='nameDesc'
           onClick={handleOnClick}
         >
-          <img value="nameDesc" src={img2} alt="icon Z-A"></img>
+          <img value='nameDesc' src={img2} alt='icon Z-A'></img>
         </button>
-        <button className={styles.btn} value="ratAsd" onClick={handleOnClick}>
+        <button className={styles.btn} value='ratAsd' onClick={handleOnClick}>
           Rating 5 - 0
         </button>
-        <button className={styles.btn} value="ratDesc" onClick={handleOnClick}>
+        <button className={styles.btn} value='ratDesc' onClick={handleOnClick}>
           Rating 0 - 5
         </button>
         <button
           className={styles.btn}
-          value="checklist"
-          id="btn-filter"
+          value='checklist'
+          id='btn-filter'
           onClick={handelOnClickList}
         >
           Show Category Filter
@@ -105,12 +105,12 @@ const FilterBar = () => {
       </div>
       <div className={styles.checkboxContainer}>
         {show ? (
-          <ul className={styles.checkList} name="category">
+          <ul className={styles.checkList} name='category'>
             {stateGenres?.map((opt, i) => (
               <label className={styles.labelCheck} key={i}>
                 <input
                   className={styles.inputCheck}
-                  type="checkbox"
+                  type='checkbox'
                   value={opt.name}
                   key={opt.id}
                   onChange={updateInputValue}

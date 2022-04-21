@@ -1,8 +1,8 @@
 //Libraries, Hooks
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 //Styles
-import styles from "./Pagination.module.css";
+import styles from './Pagination.module.css';
 
 const Pagination = ({ gamesPerPage, totalGames, paginate, current }) => {
   const pageNumbers = [];

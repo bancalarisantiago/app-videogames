@@ -1,12 +1,12 @@
 //Libraries, Hooks
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 //Styles
 
-import styles from "./VidegameCard.module.css";
+import styles from './VidegameCard.module.css';
 //Images
-import NoImage from "../../images/depositphotos_227725020-stock-illustration-no-image-available-icon-flat.jpg";
+import NoImage from '../../images/depositphotos_227725020-stock-illustration-no-image-available-icon-flat.jpg';
 
 const VideogameCard = ({
   background_image,
@@ -25,7 +25,7 @@ const VideogameCard = ({
         <img
           className={styles.image}
           src={background_image || NoImage}
-          alt="videogame pic"
+          alt='videogame pic'
         />
       </Link>
       <div className={styles.details}>
