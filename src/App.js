@@ -12,9 +12,9 @@ import {
 
 //Components
 import Home from './components/Home.jsx';
-import VideogameDetail from './components/VideogameDetail/index.jsx';
-import VideogameForm from './components/VideogameForm/index.jsx';
-import Landing from './components/Landing/index.jsx';
+import VideogameDetail from './components/VideogameDetail';
+import VideogameForm from './components/VideogameForm';
+import Landing from './components/Landing';
 
 //Styles
 import './App.css';

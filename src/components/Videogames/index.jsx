@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 //Components
-import VideogameCard from '../VideogameCard/index.';
+import VideogameCard from '../VideogameCard';
 import Pagination from '../Pagination';
 import Spinner from '../Spinner';
 
