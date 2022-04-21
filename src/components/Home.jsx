@@ -1,5 +1,5 @@
 //Hooks
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 //Actions
@@ -11,11 +11,11 @@ import {
 } from '../redux/actions/index';
 
 //Components
-import Videogames from './Videogames/Videogames.jsx';
-import Header from './Header/Header.jsx';
-import SearchBar from './SearchBar/SearchBar.jsx';
-import FilterBar from './FilterBar/FilterBar.jsx';
-import Nav from './Nav/Nav.jsx';
+import Videogames from './Videogames';
+import Header from './Header';
+import SearchBar from './SearchBar';
+import FilterBar from './FilterBar';
+import Nav from './Nav';
 
 //Styles
 import style from './Home.module.css';
@@ -35,7 +35,7 @@ const Home = () => {
     if (vgId.length > 0) {
       dispatch(clearVgId());
     }
-  }, [dispatch, vgId.length, statePlatforms.length]);
+  }, [dispatch, vgId, statePlatforms]);
 
   return (
     <div className={style.container}>
@@ -43,9 +43,7 @@ const Home = () => {
       <Nav />
       <SearchBar />
       <FilterBar />
-      <div>
-        <Videogames games={stateVideogames} />
-      </div>
+      <Videogames games={stateVideogames} />
     </div>
   );
 };

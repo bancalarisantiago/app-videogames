@@ -1,5 +1,4 @@
 //Libraries, Hooks
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 //Styles

@@ -1,5 +1,5 @@
 //Libraries, Hooks
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 //Styles
 import styles from './Pagination.module.css';

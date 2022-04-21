@@ -11,10 +11,10 @@ import {
 } from '../src/redux/actions/index';
 
 //Components
-import Home from './components/home';
-import VideogameDetail from './components/VideogameDetail/VideogameDetail.jsx';
-import VideogameForm from './components/VideogameForm/VideogameForm.jsx';
-import Landing from './components/Landing/Landing.jsx';
+import Home from './components/Home.jsx';
+import VideogameDetail from './components/VideogameDetail';
+import VideogameForm from './components/VideogameForm';
+import Landing from './components/Landing';
 
 //Styles
 import './App.css';

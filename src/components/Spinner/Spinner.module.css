@@ -1,5 +1,6 @@
 .container {
-  width: 100vw;
+  height: 100vmax;
+  width: auto;
 }
 
 .loader {
@@ -28,14 +29,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
 }
 .loader:after {
   background: #2d5ff5;
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  content: "";
+  content: '';
   margin: auto;
   position: absolute;
   top: 0;
